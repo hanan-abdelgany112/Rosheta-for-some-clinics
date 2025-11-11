@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medical Report - Multi Page</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    font-family: "Cairo", "Arial", sans-serif;
+    background: #ffffff;
+  }
+
+  
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35mm;
+    background: url('header1.png') no-repeat center top / cover;
+  }
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28mm;
+    background: url('footer.png') no-repeat center bottom / cover;
+  }
+
+ 
+  .content-area {
+    position: absolute;
+    top: 36mm;
+    bottom: 29mm;
+    left: 12mm;
+    right: 12mm;
+    overflow: hidden;
+  }
+
+
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140mm;
+    max-width: 75%;
+    pointer-events: none;
+  }
+
+  
+  .report-content {
+    position: relative;
+    z-index: 2;
+    line-height: 1.8;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0 2mm;
+  }
+
+  @media print {
+    body { margin: 0; }
+    .page:last-child { page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+
+  <div class="page">
+    <div class="header"></div>
+    <img src="logo.png" class="watermark" alt="watermark" />
+    <div class="content-area">
+      <div class="report-content">
+        <!-- هنا بقى تحطي البيانات اللي جاية من  الداتابيز -->
+        <!-- <p>
+          هذا مثال على نص تقرير طبي. يمكن إدراج أي كمية من النصوص هنا سواء تم جلبها من قاعدة بيانات أو من ملف آخر.
+          سيبدأ النص بعد الهيدر ويتوقف قبل الفوتر. ولو النص أطول من صفحة واحدة، سيُنشئ تلقائيًا صفحة جديدة بنفس التصميم.
+        </p> -->
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+
+</body>
+</html>
