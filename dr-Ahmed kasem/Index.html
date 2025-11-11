@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>روشتة</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  height: 25cm;
+  width: calc(17.6cm * 2); /* لأن دلوقتي الورقة فيها جزئين */
+  position: relative;
+  background: none; 
+    }
+
+    .container {
+      padding: 20px 30px;
+      box-sizing: border-box;
+      position: relative;
+      height: 100%;
+    }
+
+    .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.name-date-header {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+    .top-header img.logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .doctor-info {
+      text-align: right;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .doctor-info .title {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .line {
+      border-top: 2px solid #e91e63;
+      margin: 10px 0;
+    }
+
+    .name-date {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .r-symbol {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  position: absolute; 
+  top: 150px;          
+  left: 30px;    
+  z-index: 10;
+}
+
+
+    .side-text {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: rotate(-90deg) translateY(60%);
+  transform-origin: left top;
+  font-weight: bold;
+  text-align: center;
+}
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      border: 2px solid #e91e63;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+
+    .footer .location {
+      margin-bottom: 5px;
+    }
+
+    .footer .phones {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+.long-side-line {
+  position: absolute;
+  top: 17%; 
+  bottom: 19%; 
+  right: 20px;
+  width: 2px;
+  background-color: #e91e63;
+}
+
+.background-logo {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 250px;
+  transform: translateY(-50%);
+  width: 450px;
+  opacity: 0.3; 
+  z-index: 0;
+  pointer-events: none; 
+  text-align: right;
+}
+
+.pink-text {
+  color: #e91e63;
+}
+
+.phone-number {
+  background-color: #e91e63;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  flex: 1;
+}
+
+.footer-qr {
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.qr-code {
+  width: 90px;
+  height: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row; /* يخلي الصورة على اليمين فعلاً */
+  width: calc(17.6cm * 2); /* مجموع العرض للصورة + الروشتة */
+  height: 25cm; /* نفس ارتفاع الروشتة */
+}
+
+.extra-image {
+  width: 17.6cm;
+  height: 25cm;
+  box-sizing: border-box;
+    overflow: hidden;
+}
+
+.extra-image img {
+  width: 100%;
+  height: 100%;
+   object-fit: fill;/* يضمن إنها تملأ المساحة تمامًا */
+}
+
+.main-content {
+  width: 17.6cm;
+  height: 25cm;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+  </style>
+</head>
+<body>
+ <div class="wrapper">
+
+      <div class="extra-image">
+      <img src="/image/png2.png" alt="جزء إضافي" />
+    </div>
+  <div class="main-content">
+  <div class="container">
+
+    <img src="/image/لوجو د.أحمد ابو القاسم.png" alt="شعار خلفي" class="background-logo" />
+
+    <div class="top-header">
+     
+        <div class="doctor-info">
+          <div style="margin-bottom: 10px;">إسم المريض: ------------------------------- </div>
+           <br>
+          <div style="margin-bottom: 10px;">العنوان : ------------------------------------ </div>
+        </div>
+      
+
+        <div class="logo-container">
+          <!-- <img src="/image/لوجو د.أحمد ابو القاسم.png" alt="شعار العيادة" class="logo" /> -->
+        </div>
+     
+        <div class="name-date-header">     
+              <div>التاريخ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20</div>
+         <br> <br>
+              <div style="margin-bottom: 10px;">السن: -------------------------------- </div>
+      </div>
+      
+
+
+    <div style="height: 100px;"></div>
+
+   <div class="footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <div class="location" style="text-align: center; font-weight: bold; font-size: 18px;">
+        <span class="pink-text">العيادة الرئيسية :</span> ش حسنى مبارك - بجوار بنك القاهرة - بجوار صدلية د.ثروت
+        <br>
+        <span class="pink-text">العيادة القرية الرئيسية :</span> أمام كوبري محمود عبدالرحيم - بجوار صيدلية د.محمد خالد
+      </div>
+
+      <div class="phones" style="font-size: 17px;">
+        <div>
+            <span class="pink-text">للحجز و الاستعلام :</span> <span class="phone-number">01129685335</span>
+            <span class="pink-text">ت الطبيب (الواتس) :</span> <span class="phone-number">01002198818</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer-qr">
+      <img src="/image/facebook.png" alt="QR Code" class="qr-code" />
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="r-symbol">/R</div>
+</div>
+  </div>
+</div>
+
+</body>
+</html>

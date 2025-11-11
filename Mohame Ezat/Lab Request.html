@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical certificate </title>
+    <style>
+ @page {
+    size: 17.6cm 25cm;
+    margin: 10mm;
+}
+
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+            color: #333;
+            line-height: 1.4;
+            width: 17.6cm;
+           height: 25cm;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .prescription-container {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #333;
+            padding: 15px;
+            position: relative;
+        }
+        
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+             
+      
+        
+        .header-center {
+            text-align: center;
+            flex: 1;
+            margin: 0 20px;
+        }
+        
+        .doctor-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1fa5da;
+            margin-bottom: 5px;
+        }
+        
+        .doctor-title {
+            font-size: 14px;
+            color: #000000;
+            line-height: 1.3;
+            font-weight: bold;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-pros {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #06b6d4, #0891b2);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+        }
+        
+        
+     
+   
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            right: 15px;
+            border-top: 2px solid #333;
+            padding-top: 5px;
+        }
+        
+      
+        
+      
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .prescription-container {
+                page-break-inside: avoid;
+            }
+            html, body {
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+}
+
+        }
+
+     
+.header-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #1fa5da; 
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.safwa-contact {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #aaa;
+}
+
+.safwa-address {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.safwa-phones {
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    font-weight: bold;
+    color: #1fa5da;
+}
+
+.certificate-title {
+    background-color: #1fa5da;
+    color: #eee;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+     text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+
+.lab-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="prescription-container">
+        <!-- Header -->
+        <div class="header">
+      
+            <div class="header-left">
+    <img src="logo2.jpeg" alt="لوجو يسار" class="header-logo">
+</div>
+
+            
+            <div class="header-center">
+                <div class="doctor-name">دكتور<br>محمد عزت سعيد</div>
+                <div class="doctor-title">
+                    إستشاري جراحة العظام و المفاصل القصر العينى<br>
+                    دبلوم جراحة العظام و مناظير المفاصل (قناة السويس)<br>
+                    ماجستير جراحة العظام و العمود الفقري<br>
+                    عضو جمعية العظام المصرية
+                </div>
+            </div>
+            
+            <div class="header-right">
+    <img src="logo1.jpeg" alt="لوجو يمين" class="header-logo">
+</div>
+
+        </div>
+        
+<div class="text-center">
+
+
+  <div class="certificate-title">Lab Request </div>
+
+<div class="lab-info">
+    <span><strong>الاسم: </strong> .........................</span>
+    <span><strong>السن: </strong> .........................</span>
+    <span><strong>التاريخ: </strong> .........................</span>
+</div>
+
+
+</div>
+
+
+
+     
+        
+        <!-- Footer -->
+        <div class="footer">
+  <div class="footer-top">
+    <span class="consultation-date"> </span>
+    <span class="emergency-number">للطوارئ: 01067376666</span>
+  </div>
+          
+            
+ <div class="safwa-contact">
+    <div class="safwa-address">عيادة دار الصفوة: 1 شارع عمر بن الخطاب من شارع التحرير - أمام موقف أتوبيس زنين - ناصية شارع العشرين</div>
+    <div class="safwa-phones">
+        <span>للاستفسار واتساب: 01153328822</span>
+        <span style="margin-right: 20px;">للحجز: 01153328811</span>
+    </div>
+</div>
+ <div class="safwa-contact">
+    <div class="safwa-address">عيادة برو : ميدان فودافون-المحور المركزي-انفنتي مول-فوق مول رنين دور2-C14-بجوار مستشفى 6 اكتوبر المركزي</div>
+    <div class="safwa-phones">
+        <span>للاستفسار واتساب: 01153328822</span>
+        <span style="margin-right: 20px;">للحجز: 01555428566</span>
+    </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

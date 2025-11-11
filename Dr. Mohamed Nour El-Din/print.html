@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>روشتة</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Tahoma", sans-serif;
+      background: #fdfdfd url("1.jpg") no-repeat center center;
+      background-size: 300px auto;
+      background-attachment: fixed;
+    }
+
+    .prescription {
+      width: 176mm; 
+      height: 250mm; 
+      max-width: 100%;
+      margin: auto;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid #ddd;
+      position: relative;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    /* الهيدر */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .doctor {
+      text-align: right;
+      line-height: 1.6;
+        display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+  gap: 4px;
+    }
+
+    .doctor h4 {
+      margin: 0;
+      font-size: 16px;
+      color: #0070c0;
+    }
+
+    .doctor h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #d71a1a;
+    }
+
+    .doctor h3 {
+      margin: 0;
+      font-size: 15px;
+      color: #0070c0;
+    }
+
+    .doctor h5 {
+      margin: 0;
+      font-size: 15px;
+      color: #d71a1a;
+    }
+
+    .info {
+      text-align: left;
+      line-height: 2;
+      font-size: 14px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    .info div {
+      margin-bottom: 5px;
+    }
+
+    /* R / */
+  .rx {
+  margin: 50px 0 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #d71a1a;
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  text-align: left;
+  direction: ltr;
+}
+
+
+    /* الفوتر */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #004080;
+      color: white;
+      padding: 15px 25px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    .footer .right,
+    .footer .left {
+      line-height: 1.8;
+    }
+
+    .footer .highlight {
+      color: #ff0;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .prescription {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .info {
+        text-align: right;
+        margin-top: 10px;
+      }
+
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="prescription">
+
+    <!-- الهيدر -->
+    <div class="header">
+      <!-- يمين -->
+      <div class="doctor">
+        <h4>دكتور</h4>
+        <h2>محمد إمام نور الدين</h2>
+        <h3>استشاري الأمراض الباطنة والحميات</h3>
+        <h5>وحميات الأطفال</h5>
+      </div>
+      <!-- شمال -->
+      <div class="info">
+        <div>الاسم:-------------------------------</div>
+        <div>التاريخ:------------------------------- </div>
+      </div>
+    </div>
+
+    <!-- Rx -->
+    <div class="rx">R /</div>
+
+    <!-- الفوتر -->
+    <div class="footer">
+      <!-- يمين -->
+      <div class="right">
+        <div>📍 <span class="highlight">العيادة:</span> الدلنجات - بجوار مطعم الباشا</div>
+        <div>⏰ <span class="highlight">مواعيد العمل:</span> من 1 ظهراً - 9 مساءً</div>
+      </div>
+      <!-- شمال -->
+      <div class="left">
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp" width="20" style="vertical-align: middle; margin-right: 5px;"> <span class="highlight">العيادة:</span> ٠١١٥٤٠٩١١٩٤</div>
+        <div>📞 <span class="highlight">الطبيب:</span> ٠١٠٩٧٧٢٨٠٢١</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

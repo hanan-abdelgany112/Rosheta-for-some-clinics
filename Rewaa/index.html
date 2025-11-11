@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>روشتة - B5</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+ 
+    @page { size: 176mm 250mm; margin: 10mm; }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Cairo', Arial, sans-serif;
+      background:#f6f8fb;
+      -webkit-print-color-adjust:exact;
+      color:#08345a;
+    }
+
+ .sheet {
+  width:176mm; 
+  height:250mm;
+  margin:20mm auto;
+  background:white;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 0 0.5cm rgba(0,0,0,0.08);
+}
+
+.sheet::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 55%; /* ← هنا بتحركي الصورة لتحت شويه */
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: url('2.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.5; /* ← هنا بتقللي الشفافية */
+  pointer-events: none; /* ← عشان ما تأثرش على أي عنصر */
+}
+
+
+ 
+   .header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:3px 13px; 
+}
+
+    .brand{
+      text-align:center;
+      
+    }
+    .brand h1{
+      margin:0;font-size:18px;font-weight:bold;color:#0f4c7a;
+    }
+    .brand p{margin:4px 0 0 0;color:#277fa6;font-size:12px ; font-weight: bold;}
+
+.logo img {
+  width: 180px; 
+  height: auto;
+  object-fit: contain;
+}
+
+
+   
+   .ribbon{
+    line-height: 20px;
+  background:linear-gradient(90deg,#dff4fb, #cfeff8);
+  padding:5px 10px;
+  border-top:3px solid rgba(15,76,122,0.06);
+  display:flex;justify-content:space-between;align-items:center;
+}
+
+    .patient-fields{
+      width:65%;
+    }
+    .patient-fields .row{display:flex;gap:12px;align-items:center}
+    .field-label{min-width:80px;color:#0f4c7a;font-weight:600}
+    .field-line{flex:1;border-bottom:2px dotted rgba(15,76,122,0.25);height:24px}
+
+    .vitals{
+      width:30%;text-align:left;padding-left:8px;color:#0f4c7a;font-weight:600;
+    }
+    .vitals .item{display:flex;justify-content:space-between;padding:6px 8px}
+    .vitals .label{font-weight:700}
+
+  
+    .watermark{
+      position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);
+      opacity:0.07;width:70%;pointer-events:none;
+    }
+
+  
+    .notes{
+      padding:26px 34px;min-height:260px;
+    }
+
+   
+    .footer{
+      position:absolute;left:0;right:0;bottom:0;padding:10px 18px;background:#38a3d6;color:white;text-align:center;font-weight:600;
+    }
+
+  
+    .diagnosis{padding:8px 22px 0 22px}
+    .diag-line{border-bottom:2px dotted rgba(15,76,122,0.25);height:26px;margin-bottom:8px}
+
+  
+    @media print{
+      body{background:white}
+      .sheet{box-shadow:none;margin:0}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="sheet" role="document">
+    <div class="header">
+
+       <div class="logo">
+  <img src="1.png" alt="لوجو العيادة">
+</div>
+
+
+      <div class="brand">
+        <h1>عيادات رواء التخصصية</h1>
+        <p>باطنة - الجهاز الهضمي - القلب والأوعية الدموية<br>الأسنان - النساء والتوليد - الأطفال - الأنف والأذن</p>
+      </div>
+
+     
+    </div>
+
+    <div class="ribbon">
+      <div class="patient-fields">
+        <div class="row">
+          <div style="min-width:110px" class="field-label">اسم المريض :----------------</div>
+          
+          <div style="min-width:70px" class="field-label">التاريخ :----------------</div>
+         
+        </div>
+        <div style="height:6px"></div>
+        <div class="diagnosis">
+          <div class="field-label">التشخيص :------------------------------------------</div>
+        
+        </div>
+      </div>
+
+      <div class="vitals">
+        <div class="item"><span class="label">WT:------------------</span></div>
+        <div class="item"><span class="label">BP:------------------</span></div>
+        <div class="item"><span class="label">HR:------------------</span></div>
+        <div class="item"><span class="label">Temp:---------------</span></div>
+      </div>
+    </div>
+
+
+    <svg class="watermark" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#0f4c7a" stroke-width="2" transform="translate(0,10)">
+        <path d="M150 40 C200 10 320 10 340 70 C360 130 280 170 200 200 C120 230 80 210 60 180 C40 150 80 80 150 40 Z" fill="#e8f8ff" stroke="none" opacity="0.9"/>
+      </g>
+    </svg>
+
+    <div class="notes">
+    
+    </div>
+
+    <div class="footer">
+      العنوان: الدور الثاني مول اجياد كاسيل بجوار مول سيتي اسكيب وبنده اسكندريه – 6 أكتوبر · المواعيد: من 1 ظهرًا إلى 10 مساءً يوميًا ما عدا الجمعة ·  <br>رقم العيادة: 01108538685 - 01090423727
+    </div>
+  </div>
+</body>
+</html>

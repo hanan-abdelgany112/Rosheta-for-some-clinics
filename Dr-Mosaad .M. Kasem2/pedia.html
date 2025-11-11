@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>روشتة</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  height: 25cm;
+  width: 17.6cm;
+  position: relative;
+  background: none;
+    }
+
+    .container {
+      padding: 20px 30px;
+      box-sizing: border-box;
+      position: relative;
+      height: 100%;
+    }
+
+    .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.name-date-header {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+    .top-header img.logo {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .doctor-info {
+      text-align: right;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .doctor-info .title {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .line {
+      border-top: 2px solid #e91e1e;
+      margin: 10px 0;
+    }
+
+    .name-date {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+  .r-symbol {
+            font-family: "Brush Script MT", cursive;
+            font-size: 40px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+
+
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      border: 2px solid #e91e1e;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+
+    .footer .location {
+      margin-bottom: 5px;
+    }
+
+    .footer .phones {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+.long-side-line {
+  position: absolute;
+  top: 17%; 
+  bottom: 19%; 
+  right: 20px;
+  width: 2px;
+  background-color: #e91e1e;
+}
+
+.background-logo {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+    width: 300px;
+  transform: translateY(-50%);
+  width: 500px;
+  opacity: 0.4; 
+  z-index: 0;
+  pointer-events: none; 
+  text-align: right;
+}
+
+.pink-text {
+  color: #e91e1e;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+<img src="/image/logo.png" alt="شعار خلفي" class="background-logo" />
+
+    <div class="top-header">
+     
+        <div class="doctor-info">
+          <div class="title" style="background-color: #e91e1e; color: aliceblue; font-size: 24px;">دكتور
+            <div style="font-size: 34px; background-color: #f3b4b4; text-align: center; color: aliceblue; font-size: 20px;">مسعد محمد قاسم</div>
+          </div>
+        
+          <div style="text-align: center; font-size: 18px;">استشاري النساء و التوليد   </div>
+          <div style="text-align: center; font-size: 18px;">استشاري الحقن المجهري  </div>
+          <div style="text-align: center; font-size: 18px;">استشاري المناظير النسائية  </div>
+          <div style="text-align: center; font-size: 18px;">الكشف بالسونار رباعي الابعاد    </div>
+        </div>
+      
+
+        <div class="logo-container">
+          <img src="/image/logo.png" alt="شعار العيادة" class="logo" />
+        </div>
+     
+        <div class="name-date-header">
+          <div style="margin-bottom: 10px;">الاسم: -----------------------------------</div>
+           <br>
+          <div>التاريخ :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</div>
+        <br>
+          <div style="margin-bottom: 10px;">السن: -------------------------------------</div>
+        </div>
+      </div>
+      
+
+    <div class="line"></div>
+
+
+   <div class="r-symbol">/ R</div>
+
+    <div class="long-side-line"></div>
+
+
+    <div style="height: 350px;"></div>
+
+    
+    <div class="footer">
+
+     
+
+     <div class="phones" style="font-size: 18px;">
+  <!-- <div><span class="pink-text">العيادة: ٠٣٥٤٩٤٤٧٠  / الطوارئ: ٠١٠٠٥٤٥٨٣٨٠</span></div> -->
+  <div><span class="pink-text">العيادة :</span> ٠٣٥٤٩٤٤٧٠</div>
+   <div><span class="pink-text"> الطوارئ :</span> ٠١٠٠٥٤٥٨٣٨٠</div>
+  <div><span class="pink-text">للحجز :</span> ٠١١٤٠٧٢٢١٥١</div>
+</div>
+
+<div class="location" style="text-align: center; font-weight: bold; font-size: 18px;">
+       <span class="pink-text">المواعيد :</span>  يوميا من٥ الي ٨م ماعدا يوم الجمعة
+</div>
+
+<div class="location" style="text-align: center; font-weight: bold; font-size: 18px;">
+       <span class="pink-text">العنوان :</span>  ١٤٣ ش جمال عبد الناصر أول نفق سيدي بشر بجوار بنزينة موبيل
+     </div>
+
+   <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 18px; margin-top: 10px;">
+  <div style="background-color: #f3b4b4; color: rgb(0, 0, 0); padding: 5px 10px; border: 2px solid #e91e1e; border-radius: 5px;">
+    الاستشارة خلال اسبوعين
+  </div>
+  <div style="background-color: #f3b4b4; color: rgb(0, 0, 0); padding: 5px 10px; border: 2px solid #e91e1e; border-radius: 5px;">
+    الروشتة شرط الاستشارة
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+</body>
+</html>

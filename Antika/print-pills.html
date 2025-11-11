@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فاتورة</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: white;
+        }
+        .invoice {
+            width: 176mm;
+            height: 250mm;
+            margin: auto;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+        .header-image {
+            width: 100%;
+            height: 220px;
+            background-image: url('header.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 100%;
+        }
+        .invoice-title {
+            color: #ec008c;
+            text-align: center;
+            font-size: 28px;
+            margin: 10px 0 10px 0;
+            font-weight: bold;
+        }
+        .details {
+            text-align: right;
+            padding: 0 20px;
+              color: #ec008c;
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .main-table {
+            width: calc(100% - 45px);
+            margin: 0 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+        }
+        .main-table thead th {
+            border: 2px solid #ec008c;
+            padding: 10px;
+            color: #ec008c;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+            /* background: white; */
+          background: linear-gradient(to bottom, #f783a0, #ffffff,#f783a0);
+
+
+        }
+        .main-table thead th#description {
+            border-radius: 25px 25px 0 0;
+        }
+        .main-table thead th#quantity,
+        .main-table thead th#price,
+        .main-table thead th#total {
+            border-radius: 25px 25px 0 0;
+        }
+        .main-table td {
+            border: 2px solid #ec008c;
+            height: 35px;
+            padding: 5px;
+        }
+        .footer-table {
+            width: calc(100% - 40px);
+            margin: 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+              color: #ec008c;
+            font-weight: bold;
+        }
+        .footer-table th, .footer-table td {
+            border: 2px solid #ec008c;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .note {
+            color: #ec008c;
+            font-size: 16px;
+            padding: 0 5px;
+            margin-top: 5px;
+            line-height: 1.8;
+            text-align: right;
+            font-weight: bold;
+        }
+        .vertical-text {
+            position: absolute;
+            top: 50%;
+            left: -143px;
+            transform: rotate(-90deg);
+            color: #ec008c;
+            font-weight: bold;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .main-table .col1 { width: 20%; }
+        .main-table .col2 { width: 20%; }
+        .main-table .col3 { width: 20%; }
+        .main-table .col4 { width: 40%; }
+
+        .receiver-sign {
+            position: absolute;
+            bottom: 30px; 
+            left: 50px;
+            color: #ec008c; 
+            font-size: 16px;
+            font-weight: bold;
+            direction: rtl;
+        }
+
+        .main-table .col1 { width: 15%; }
+        .main-table .col2 { width: 15%; }
+        .main-table .col3 { width: 15%; }
+        .main-table .col4 { width: 55%; }
+
+    </style>
+</head>
+<body>
+
+    <div class="invoice">
+        <div class="header-image"></div>
+
+        <div class="details">
+            التاريخ: ............ / ............ / ............<br>
+            المطلوب من السيد: .....................................
+        </div>
+
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th class="col1" id="total">القيمة</th>
+                    <th class="col2" id="price">السعر</th>
+                    <th class="col3" id="quantity">الكمية</th>
+                    <th class="col4" id="description">البيان</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+      <table class="footer-table">
+    <colgroup>
+        <col style="width: 33.33%;">
+        <col style="width: 33.33%;">
+        <col style="width: 33.33%;">
+    </colgroup>
+    <tr>
+        <th>ما قبله</th>
+        <th>الفاتورة الحالية</th>
+        <th>إجمالى الحساب</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+        <div class="note">
+            استلمت انا البضاعة الموضحة تماما من (أنتيكا) بعد المعاينة والقبول وهذا ايصال مني بالاستلام ودفع قيمة الثمن الموضح أعلاه وأمر بموجب الطلب والدفع والتقاضي ضد إدارة الدائن.<br><br>
+        </div>
+
+<div class="receiver-sign">
+    المستلم : .....................................
+</div>
+
+        <div class="vertical-text">
+           4 شارع السلامه من ترعة السواحل أمام سنترال الوراق الدور التالت
+        </div>
+
+    </div>
+
+</body>
+</html>

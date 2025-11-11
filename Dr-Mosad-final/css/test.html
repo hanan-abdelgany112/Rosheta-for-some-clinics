@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روشتة</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+            min-height: 90vh;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            font-weight: bold;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .header div {
+            width: 48%;
+        }
+        .header .left, .header .right {
+            text-align: center;
+        }
+        .patient-info p {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .r-symbol {
+            font-family: "Brush Script MT", cursive;
+            font-size: 40px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .content {
+            min-height: 400px;
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .footer .info {
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid black;
+            padding-top: 5px;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+        .footer .info div {
+            width: 48%;
+            text-align: center;
+        }
+        .footer .address {
+            background: black;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        /* جعل التصميم متجاوبًا مع الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header div {
+                width: 100%;
+            }
+            .footer .info {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer .info div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="right">
+                <h1>دكتور</h1>
+                <h1>مسعد محمد قاسم</h1>
+                <p>استشاري النساء والتوليد</p>
+                <p>استشاري الحقن المجهري</p>
+                <p>استشاري المناظير النسائية</p>
+            </div>
+            <div class="left">
+                <h1>.Dr</h1>
+                <h1>Mosaad .M. Kasem</h1>
+                <p>Consultant Of Obestetric</p>
+                <p>and gynaecology</p>
+            </div>
+        </div>
+
+        <div class="patient-info">
+            <p><strong>الاسم:</strong> ........................................</p>
+            <p><strong>التاريخ:</strong> .......................................</p>
+        </div>
+
+        <div class="r-symbol">/ R</div>
+
+        <div class="content"></div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="info">
+                <div class="right-info">
+                    <span>العيادة: ٠٣٥٤٩٤٤٧٠ / الطوارئ: ٠١٠٠٥٤٥٨٣٨٠</span><br>
+                    <span>للحجز: ٠١١٤٠٧٢٢١٥١</span>
+                </div>
+                <div class="left-info">
+                    <span>الاستشارة خلال أسبوعين</span><br>
+                    <span>المواعيد: يوميًا من ٦ إلى ٨ م</span><br>
+                    <span>عدا الجمعة</span>
+                </div>
+            </div>
+            <div class="address">العنوان: ١٤٣ ش جمال عبد الناصر أول نفق سيدي بشر بجوار بنزينة موبيل</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

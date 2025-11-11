@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روشتة </title>
+    <style>
+          body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            padding-top: 20px;
+            /* B5 */
+            height: 21cm;
+            width: 14.85cm;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            min-height: 90vh;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+       .header div {
+    width: 45%;
+}
+
+.header .logo {
+    width: 40%; 
+    text-align: center;
+}
+
+.header .logo img {
+    width: 140px; 
+    height: auto;
+}
+        .header .left {
+            text-align:center;
+            font-size: 14px;
+        }
+        .header .right {
+            text-align: center;
+              font-size: 14px;
+        }
+        .patient-info p {
+            font-weight: bold;
+        }
+.r-symbol {
+  font-family: "Brush Script MT", cursive;
+  font-size: 40px;
+  font-style: italic;
+  position: relative;
+  top: -20px; 
+  text-align: left;
+}
+
+
+        .content {
+            min-height: 400px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .footer .info {
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid black;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        .footer .info .left-info {
+            text-align: right;
+        }
+        .footer .info .right-info {
+            text-align: right;
+        }
+        .footer .address {
+            background: rgb(255, 0, 0);
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .background-logo {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0.4;
+  padding-top: 150px;
+  width: 400px; 
+  height: auto;
+
+}
+.header .left h1 {
+  font-size: 16px; 
+  font-weight: bold;
+}
+.header .right h1 {
+  font-size: 24px; 
+}
+.header .left p, .header .right p {
+  font-size: 14px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+<img src="/image/logo.png" class="background-logo">
+        <div class="header">
+
+            <div class="right">
+                <h1>دكتور</h1>
+                <h1 style="color: red;"> مسعد محمد قاسم</h1>
+                <p>استشاري النساء والتوليد</p>
+                <p>استشاري الحقن المجهري</p>
+                <p>استشاري المناظير النسائية</p>
+                <p style="color: red;">الكشف بالسونار رباعي الابعاد  </p>
+            </div>
+
+ <div class="logo">
+        <img src="/image/logo.png" alt="Logo">
+    </div>
+    <div class="left">
+    <h1>
+        <span>.Dr</span>
+          <p></p>
+                <br>
+        <span style="color: red;"> Mosaad .M. Kasem</span>
+    </h1>
+    <br>
+  
+    <p style="font-size: 15px;">Consultant Of Obestetric</p>
+     <p></p>
+    <p>and gynaecology</p>
+</div>
+
+
+
+            
+        </div>
+
+        <div class="patient-info">
+    <p>
+    <strong>الاسم:</strong> ................................
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>التاريخ:</strong> .............................
+</p>
+
+            
+        </div>
+
+        <div class="r-symbol">/ R</div>
+
+        <div class="content"></div>
+
+<!-- foooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+        <div class="footer">
+            <div class="info">
+
+                <div class="right-info">
+                    <span>العيادة: ٠٣٥٤٩٤٤٧٠  /  للحجز:٠١١٤٠٧٢٢١٥١  </span><br>
+                    <span style="display: block; text-align:center;">الطوارئ: ٠١٠٠٥٤٥٨٣٨٠ </span><br>    
+                </div>
+
+                <div class="left-info">
+                    <span>الاستشارة خلال أسبوعين</span><br>
+                    <span>المواعيد:يوميا من٥الي٨م</span><br>
+                    <span style="display: block; text-align:center;">عدا الجمعة</span>
+                </div>
+
+            </div>
+
+            <div class="address">العنوان: ١٤٣ ش جمال عبد الناصر أول نفق سيدي بشر بجوار بنزينة موبيل</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

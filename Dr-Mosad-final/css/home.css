@@ -1,0 +1,75 @@
+  body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            min-height: 90vh;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        .header div {
+            width: 45%;
+        }
+        .header .left {
+            text-align:center;
+        }
+        .header .right {
+            text-align: center;
+        }
+        .patient-info p {
+            font-weight: bold;
+        }
+        .r-symbol {
+            font-family: "Brush Script MT", cursive;
+            font-size: 40px;
+            font-style: italic;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .content {
+            min-height: 900px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .footer .info {
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid black;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        .footer .info .left-info {
+            text-align: right;
+        }
+        .footer .info .right-info {
+            text-align: right;
+        }
+        .footer .address {
+            background: black;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
